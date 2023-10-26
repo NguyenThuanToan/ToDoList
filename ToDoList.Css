@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*Dùng để tính toán kích thước,dễ hiểu là kích thước sẽ được giữ nguyên mà không cần phải tính toán  */
+
+}
+body{
+    height: 100vh;
+    background: linear-gradient(to right, #ffe000,#799f0c);
+    font-family: sans-serif;
+}
+
+.container{
+    width: 400px;
+    margin: 100px auto;
+    background: white;
+    padding-top: 10px ;
+    overflow: hidden;/*trong CSS được sử dụng để điều khiển hiển thị nội dung của một phần tử khi nội dung đó vượt quá kích thước của phần tử đó. */
+    border-radius: 6px;
+}
+form{
+    border-bottom: 1px solid #aaa;
+    padding: 10px 20px;
+    font-size: 22xpx;
+    display: flex;
+    justify-content: space-between;
+}
+/*input nằm trong form */
+form input{
+    font-size: 24px;
+    width: 100%;
+    margin-right: 15px;
+    border: none;
+    outline: none;
+}
+form button{
+    background: yellowgreen;
+    padding: 5px 15px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+}
+.todos{
+    list-style: none;
+
+}
+.todos li{
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #e5e5e5;
+    font-size: 22px;
+    align-items: center;
+    cursor: pointer;
+}
+.todos li span{
+    width: 80%;
+    overflow: hidden;
+    text-overflow: ellipsis;/*Nếu nội dung quá dài và tràn ra sẽ được thay thế bằng dấu (...) */
+    white-space: nowrap; /*để ngăn văn bản xuống dòng và tiếp tục trên một dòng duy nhất.*/
+}
+li.completed{
+    color: #aaa;
+    
+}
+li.completed span{
+    text-decoration: line-through;/* gạch chữ*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
